@@ -1,0 +1,98 @@
+/*	12 COLUMN : RESPONSIVE GRID SYSTEM
+	DEVELOPER : DENIS LEBLANC
+	URL : http://responsive.gs
+	VERSION : 3.0
+	LICENSE : GPL & MIT */
+
+
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/scripts/boxsizing.htc);
+  /*	If you need support for IE7 and lower make
+      sure the boxsizing.htc file is linked properly.
+      More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+
+/*	MAIN CONTAINER
+	Set the width to whatever you want the width of your site to be. */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 	DEFAULT ROW STYLES
+	Set bottom padding according to preference */
+.row { padding-bottom: 0em;
+  &+.row { padding-top:20px; }
+}
+
+
+/* DEFAULT COLUMN STYLES */
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+@gutterwidth : (30 /1170) * 100%;
+
+@media ( min-width : 768px ) {
+  .gutters .col {
+    margin-left: @gutterwidth ;
+  }
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+
+.makeCol(@x, @gtr:0 ){
+  width: ((100% / 12) * @x) - (@gtr * ( 1 -  (@x / 12) )) ;
+}
+
+
+/*	COLUMN WIDTH ON DISPLAYS +768px
+	You might need to play with media queries here to suite your design. */
+@media ( min-width : 768px ) {
+  .span_1  { .makeCol(1); }
+  .span_2  { .makeCol(2); }
+  .span_3  { .makeCol(3); }
+  .span_4  { .makeCol(4); }
+  .span_5  { .makeCol(5); }
+  .span_6  { .makeCol(6); }
+  .span_7  { .makeCol(7); }
+  .span_8  { .makeCol(8); }
+  .span_9  { .makeCol(9); }
+  .span_10 { .makeCol(10); }
+  .span_11 { .makeCol(11); }
+  .span_12 { .makeCol(12); }
+  .gutters .span_1  { .makeCol(1,@gutterwidth); }
+  .gutters .span_2  { .makeCol(2,@gutterwidth); }
+  .gutters .span_3  { .makeCol(3,@gutterwidth); }
+  .gutters .span_4  { .makeCol(4,@gutterwidth); }
+  .gutters .span_5  { .makeCol(5,@gutterwidth); }
+  .gutters .span_6  { .makeCol(6,@gutterwidth); }
+  .gutters .span_7  { .makeCol(7,@gutterwidth); }
+  .gutters .span_8  { .makeCol(8,@gutterwidth); }
+  .gutters .span_9  { .makeCol(9,@gutterwidth); }
+  .gutters .span_10 { .makeCol(10,@gutterwidth); }
+  .gutters .span_11 { .makeCol(11,@gutterwidth); }
+  .gutters .span_12 { .makeCol(12,@gutterwidth); }
+
+}
