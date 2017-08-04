@@ -23,7 +23,6 @@ const Topic = ({ match }) => (
     </div>
 )
 
-
 const BasicExample = () => (
     <Router>
         <div>
