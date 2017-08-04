@@ -3,13 +3,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
+    //BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    Switch
 } from 'react-router-dom'
 
 import Home from './components/Home';
-import Topics from './components/Topics';
+import Posts from './components/Posts';
 
 // Pages
 
@@ -19,13 +21,13 @@ const About = () => (
     </div>
 )
 
-const Topic = ({ match }) => (
+const NotFound = () =>
     <div>
-        <h3>{match.params.topicId}</h3>
+        <h3>404 page not found</h3>
+        <p>We are sorry but the page you are looking for does not exist.</p>
     </div>
-)
 
-const BasicExample = () => (
+const OktayBaskus = () => (
     <Router>
         <div>
 
@@ -44,7 +46,7 @@ const BasicExample = () => (
                             <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/topics">Topics</Link>
+                            <Link className="nav-link" to="/posts">Topics</Link>
                         </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
@@ -56,16 +58,18 @@ const BasicExample = () => (
 
             <hr/>
 
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/topics" component={Topics}/>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/about" component={About}/>
+                <Route path="/posts" component={Posts}/>
+                <Route path="*" component={NotFound}/>
+            </Switch>
         </div>
     </Router>
 )
-export default BasicExample
 
 ReactDOM.render(
-    <BasicExample />
+    <OktayBaskus />
     ,
   document.getElementById('main')
 );
