@@ -11,6 +11,8 @@ import {
 import Home from './components/Home';
 import Topics from './components/Topics';
 
+// Pages
+
 const About = () => (
     <div>
         <h2>About</h2>
