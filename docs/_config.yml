@@ -1,5 +1,5 @@
 # Permalinks
-permalink: *
+permalink: /:categories/:title/
 relative_permalinks: true
 
 
