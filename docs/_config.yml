@@ -1,3 +1,6 @@
+
+permalink: /:category/:tite
+
 # Plugins
 gems:
   - jekyll-paginate
