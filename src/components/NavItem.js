@@ -1,8 +1,8 @@
 /**
  * Created by Oktay on 8/5/2017.
  */
-import React, {PropTypes} from 'react'
-import {Route, NavLink} from 'react-router-dom'
+import React, {PropTypes} from "react";
+import {NavLink, Route} from "react-router-dom";
 
 
 export default function NavItem({children, to, exact}) {

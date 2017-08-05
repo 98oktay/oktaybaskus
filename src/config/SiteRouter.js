@@ -8,6 +8,7 @@ import NavItem from "../components/NavItem";
 
 
 import About from "../components/About";
+import Projects from "../components/Projects";
 import News from "../components/News";
 
 
@@ -33,12 +34,6 @@ const NotFound = () =>
         <p>We are sorry but the page you are looking for does not exist.</p>
     </div>;
 
-
-const testFunc = () => {
-
-    console.log(11)
-};
-
 export const MainNav = () =>
     <ul className="navbar-nav m-auto">
         <NavItem exact to="/">About Me</NavItem>
@@ -51,7 +46,8 @@ export const MainNav = () =>
 export const Pages = () =>
     <Switch>
         <Route exact path="/" component={About}/>
-        <Route path="/news" onEnter={testFunc} component={News}/>
+        <Route path="/news" component={News}/>
+        <Route path="/projects" component={Projects}/>
         <Route path="*" component={NotFound}/>
     </Switch>;
 

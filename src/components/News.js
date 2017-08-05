@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
 
-export default class News extends Component {
+export default class extends Component {
 
     constructor(props) {
         super(props);
@@ -23,12 +23,12 @@ export default class News extends Component {
 
 
         /*
-        fetch("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c")
-            .then(res => res.json())
-            .then(data => {
-                this.setState({posts: data.articles})
-            });
-        */
+         fetch("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c")
+         .then(res => res.json())
+         .then(data => {
+         this.setState({posts: data.articles})
+         });
+         */
     }
 
 
