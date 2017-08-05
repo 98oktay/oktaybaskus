@@ -1,5 +1,5 @@
 
-permalink: /:category/:tite
+permalink: /:slug
 
 # Plugins
 gems:
