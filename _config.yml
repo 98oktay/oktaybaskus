@@ -3,4 +3,4 @@ gems:
   - jekyll-redirect-from
 
 baseurl: ""
-permalink: /:title/
+permalink: /posts
