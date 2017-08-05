@@ -6,10 +6,10 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify -v -d -t [ babelify --presets [ es2015 react ] ] main.js -o compiled.js",
-    "server": "php -S localhost:80",
-    "build": "NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] main.js | uglifyjs > compiled.js",
-    "buildw": "SET NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] main.js | uglifyjs > compiled.js"
+    "watch": "watchify -v -d -t [ babelify --presets [ es2015 react ] ] src/main.js -o docs/bundle.js",
+    "server": "cd docs && php -S localhost:80",
+    "build": "NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] src/main.js | uglifyjs > docs/bundle.js",
+    "buildw": "SET NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] src/main.js | uglifyjs > docs/bundle.js"
   },
   "author": "98oktay@gmail.com",
   "license": "MIT",
