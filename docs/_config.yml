@@ -2,6 +2,9 @@
 
 safe: true
 permalink: /:name
+sitemap:
+  exclude:
+    - /index.html
 
 # Plugins
 gems:
