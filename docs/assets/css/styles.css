@@ -1,6 +1,7 @@
 html, body {  margin: 0; height: 100%; }
 body {
     background: url(/assets/images/site-background.jpg) center;
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 5rem;
 }

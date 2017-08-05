@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom';
+import React, {Component} from "react";
+import axios from "axios";
 
 export default class News extends Component {
 
@@ -8,16 +8,27 @@ export default class News extends Component {
         this.state = {
             posts: []
         };
+
+
+        axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c')
+            .then(response => {
+                console.log(response.data);
+                this.setState({posts: response.data.articles})
+            });
+
+
     }
 
     componentDidMount() {
 
+
+        /*
         fetch("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c")
             .then(res => res.json())
             .then(data => {
                 this.setState({posts: data.articles})
-            })
-
+            });
+        */
     }
 
 
