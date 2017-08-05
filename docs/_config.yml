@@ -1,6 +1,6 @@
-# Permalinks
+
+layout: layout
 permalink: /:categories/:title/
-relative_permalinks: true
 
 
 # Plugins
