@@ -1,5 +1,6 @@
+# Site wide configuration
 
-permalink: pretty
+permalink: /:name
 
 # Plugins
 gems:
