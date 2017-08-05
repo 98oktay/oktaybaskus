@@ -1,5 +1,6 @@
 # Site wide configuration
 
+safe: true
 permalink: /:name
 
 # Plugins
