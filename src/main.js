@@ -1,19 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom";
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-import {
-//    HashRouter as Router,
-    BrowserRouter,
-    Route,
-    Link,
-    Switch
-} from 'react-router-dom'
-import {
-    Pages,
-    MainNav
-} from "./config/SiteRouter";
-
+import {BrowserRouter} from "react-router-dom";
+import {MainNav, Pages} from "./config/SiteRouter";
 
 
 const OktayBaskus = () => (
@@ -27,6 +16,7 @@ const OktayBaskus = () => (
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <MainNav/>
                 </div>
+                <a className="nav-link text-white" href="/cv"> CV</a>
             </nav>
             <div className="container-fluid">
                 <Pages/>
@@ -36,3 +26,29 @@ const OktayBaskus = () => (
 );
 
 ReactDOM.render(<OktayBaskus />, document.getElementById('main'));
+
+Particles.init({selector: '#particlesBackground',
+    color: '#ffffff',
+    maxParticles: 130,
+    connectParticles: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            options: {
+                maxParticles: 200,
+                connectParticles: false
+            }
+        }, {
+            breakpoint: 425,
+            options: {
+                maxParticles: 100,
+                connectParticles: true
+            }
+        }, {
+            breakpoint: 320,
+            options: {
+                maxParticles: 0 // disables particles.js
+            }
+        }
+    ]
+});

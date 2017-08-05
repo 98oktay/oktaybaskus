@@ -1,3 +1,19 @@
+html, body {  margin: 0; height: 100%; }
 body {
+    background: url(/assets/images/site-background.jpg) center;
+    background-size: cover;
     padding-top: 5rem;
+}
+
+#particlesBackground {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.personalImage {
+    max-width: 250px;
+    background: rgba(255, 255, 255, 0.8);
 }
