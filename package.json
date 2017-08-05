@@ -1,16 +1,17 @@
 {
-  "name": "first-webapp-react",
+  "name": "oktaybaskuscomtr",
   "version": "1.0.0",
-  "description": "",
+  "description": "Oktay Baskus Official Web Site",
   "main": "main.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test1": "echo \"Error: no test specified\" && exit 1",
     "watch": "watchify -v -d -t [ babelify --presets [ es2015 react ] ] main.js -o compiled.js",
-    "build": "SET NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] main.js | uglifyjs > compiled.js"
+    "server": "php -S localhost:80",
+    "build": "NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] main.js | uglifyjs > compiled.js",
+    "buildw": "SET NODE_ENV=production browserify -t [ babelify --presets [ es2015 react ] --no-sourceMaps ] main.js | uglifyjs > compiled.js"
   },
-  "author": "Tutorialzine",
+  "author": "98oktay@gmail.com",
   "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
