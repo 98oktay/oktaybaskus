@@ -31,30 +31,30 @@ const OktayBaskus = () => (
 );
 
 ReactDOM.render(<OktayBaskus />, document.getElementById('main'));
-/*
- Particles.init({selector: '#particlesBackground',
- color: '#ffffff',
- maxParticles: 130,
- connectParticles: true,
- responsive: [
- {
- breakpoint: 768,
- options: {
- maxParticles: 200,
- connectParticles: false
- }
- }, {
- breakpoint: 425,
- options: {
- maxParticles: 100,
- connectParticles: true
- }
- }, {
- breakpoint: 320,
- options: {
- maxParticles: 0 // disables particles.js
- }
- }
- ]
- });
- */
+
+Particles.init({
+    selector: '#particlesBackground',
+    color: '#dcdcdc',
+    maxParticles: 130,
+    connectParticles: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            options: {
+                maxParticles: 200,
+                connectParticles: false
+            }
+        }, {
+            breakpoint: 425,
+            options: {
+                maxParticles: 100,
+                connectParticles: true
+            }
+        }, {
+            breakpoint: 320,
+            options: {
+                maxParticles: 0 // disables particles.js
+            }
+        }
+    ]
+});

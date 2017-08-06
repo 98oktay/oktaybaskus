@@ -10,6 +10,8 @@ import NavItem from "../components/NavItem";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import News from "../components/News";
+import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 
 /*
@@ -47,6 +49,8 @@ export const MainNav = () =>
 export const Pages = () =>
     <Switch>
         <Route exact path="/" component={About}/>
+        <Route path="/skills" component={Skills}/>
+        <Route path="/experience" component={Experience}/>
         <Route path="/news" component={News}/>
         <Route path="/projects" component={Projects}/>
         <Route path="*" component={NotFound}/>

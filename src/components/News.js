@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
 import DocumentTitle from "react-document-title";
+import TweenMax from "gsap";
 
 export default class extends Component {
 
@@ -39,7 +40,7 @@ export default class extends Component {
                 <DocumentTitle title={document.title.replace('Official', 'Tech News')}/>
                 {this.state.posts.map((item, index) =>
                     <div className="news-item col-sm-4" key={index}>
-                        <div className="card">
+                        <div className="card mb-4">
                             <a href={item.url} target="_blank">
                                 <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>
                             </a>

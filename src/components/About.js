@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import DocumentTitle from "react-document-title";
+import TweenMax from "gsap";
 
 export default class extends Component {
 

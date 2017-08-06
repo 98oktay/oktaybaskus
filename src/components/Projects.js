@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 import projects from "../data/projects.json";
 import DocumentTitle from "react-document-title";
+import TweenMax from "gsap";
 
 export default class extends Component {
 
@@ -23,13 +24,14 @@ export default class extends Component {
                 <DocumentTitle title={document.title.replace('Official','My Projects')} />
                 {this.state.posts.map((item, index) =>
                     <div className="project-item col-sm-3" key={index}>
-                        <div className="card">
+                        <div className="card mb-4">
+                            <a href={item.url} target="_blank">
+                                <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>
+                            </a>
                             <div className="card-block">
-                                <a href={item.url} target="_blank">
-                                    <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>
-                                </a>
                                 <p className="card-text">{item.title}</p>
-                                <a href={item.url} target="_blank" className="btn btn-secondary">Details</a>
+                                {item.url? <a href={item.url} target="_blank" className="btn btn-secondary">Details</a>: "" }
+                                {item.videoUrl? <a href={item.videoUrl} target="_blank" className="btn btn-secondary">Watch</a>: "" }
                             </div>
                         </div>
                     </div>

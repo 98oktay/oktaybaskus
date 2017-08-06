@@ -15,10 +15,12 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
+    "gsap": "^1.20.2",
+    "gsap-react-plugin": "^1.0.2",
     "react": "^15.6.1",
+    "react-document-title": "latest",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2",
-    "react-document-title": "latest"
+    "react-router-dom": "^4.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

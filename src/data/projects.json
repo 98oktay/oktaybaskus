@@ -2,18 +2,21 @@
   "data": [
     {
       "title": "Şafak Sayar Android Application",
-      "urlToImage": "https://lh3.googleusercontent.com/DxYfNWXmvoqlPG_KnoYTYWKyNYMgoaDmdhOYWr1IBgjINuw98RjtsJkCuCiArxWy6kbE=w300-rw",
-      "url": "https://play.google.com/store/apps/details?id=tr.com.oktaybaskus.safaksayar"
+      "urlToImage": "https://lh3.googleusercontent.com/DxYfNWXmvoqlPG_KnoYTYWKyNYMgoaDmdhOYWr1IBgjINuw98RjtsJkCuCiArxWy6kbE=w300",
+      "url": "https://play.google.com/store/apps/details?id=tr.com.oktaybaskus.safaksayar",
+      "type": "app"
     },
     {
       "title": "Live Perisco Pro Android Application",
-      "urlToImage": "https://lh3.googleusercontent.com/jp-RH6Ctnykawko7cnVP9x_Rj8gGr_pMcTV4X0NJ_fwoe1O7CdrI5kvAhu1srWVfXQ=w300-rw",
-      "url": "https://play.google.com/store/apps/details?id=tr.com.oktaybaskus.periscopro"
+      "urlToImage": "https://lh3.googleusercontent.com/jp-RH6Ctnykawko7cnVP9x_Rj8gGr_pMcTV4X0NJ_fwoe1O7CdrI5kvAhu1srWVfXQ=w300",
+      "url": "https://play.google.com/store/apps/details?id=tr.com.oktaybaskus.periscopro",
+      "type": "app"
     },
     {
       "title": "Home Automotion System",
       "urlToImage": "https://i.ytimg.com/vi/nJbOubV3hZI/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=nJbOubV3hZI"
+      "videoUrl": "https://www.youtube.com/watch?v=nJbOubV3hZI",
+      "type": "video"
     }
   ]
 }
