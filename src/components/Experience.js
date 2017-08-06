@@ -16,7 +16,7 @@ export default class extends Component {
         return (
             <div className="row">
                 <DocumentTitle title={document.title.replace('Official', 'Experience')}/>
-                <div className="col-md-4 wow slideInLeft">
+                <div className="col-md-4 animated-down">
                     <div className="section-sidebar">
                         <h2><span className="point">Experience</span></h2>
                         <div className="opacity-box">
@@ -28,11 +28,11 @@ export default class extends Component {
                     </div>
                 </div>
                 <div className="col-md-8 right-box">
-                    <div className="row wow zoomIn">
+                    <div className="row animated-down">
                         <div className="col-md-8">
                             <div className="about-row">
                                 <h4>Frontend Developer</h4>
-                                <h4 className="color-h4">Modanisa Inc.</h4>
+                                <h5 className="color-h4">Modanisa Inc.</h5>
                                 <div className="opacity-box">
                                     <p>Designed and developed user-friendly website, including optimized check-out
                                         page that increased user clicks, and subsequently customer purchases by 20%.</p>
@@ -45,11 +45,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row wow zoomIn">
+                    <div className="row animated-down">
                         <div className="col-md-8">
                             <div className="about-row">
                                 <h4>Full Stack Developer</h4>
-                                <h4 className="color-h4">Touch Digital Communication.</h4>
+                                <h5 className="color-h4">Touch Digital Communication.</h5>
                                 <div className="opacity-box">
                                     <p>Leading a small team on a variety of development projects and delivering
                                         solutions to meet and exceed clients’ briefs.</p>
@@ -62,11 +62,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row wow zoomIn">
+                    <div className="row animated-down">
                         <div className="col-md-8">
                             <div className="about-row">
                                 <h4>Web Developer</h4>
-                                <h4 className="color-h4">ICON Perception Management Inc.</h4>
+                                <h5 className="color-h4">ICON Perception Management Inc.</h5>
                                 <div className="opacity-box">
                                     <p>Revamped web application security applications, minimizing hacker
                                         attacks from 2.3% to 0.02%.</p>
@@ -79,11 +79,11 @@ export default class extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row wow zoomIn">
+                    <div className="row animated-down">
                         <div className="col-md-8">
                             <div className="about-row">
                                 <h4>Graphic Designer</h4>
-                                <h4 className="color-h4">Medyanet Bilişim A.Ş.</h4>
+                                <h5 className="color-h4">Medyanet Bilişim A.Ş.</h5>
                                 <div className="opacity-box">
                                     <p>Revamped web application security applications, minimizing hacker
                                         attacks from 2.3% to 0.02%.</p>

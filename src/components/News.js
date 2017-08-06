@@ -10,19 +10,33 @@ export default class extends Component {
         this.state = {
             posts: []
         };
-        axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c')
-            .then(response => {
-                this.setState({posts: response.data.articles})
 
-                TweenMax.staggerFrom('.news-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
+        if(sessionStorage.getItem('newsData')) {
+            this.state.posts = JSON.parse(sessionStorage.getItem('newsData'));
+        } else {
+            axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c')
+                .then(response => {
+                    sessionStorage.setItem('newsData', JSON.stringify(response.data.articles));
+                    this.setState({posts: response.data.articles});
+                    this.onDataLoad();
+                });
+        }
+
+    }
 
 
-            });
+
+    onDataLoad() {
+
+        TweenMax.staggerFrom('.news-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
+
     }
 
     componentDidMount() {
 
-
+        if (this.state.posts) {
+            this.onDataLoad();
+        }
         /*
          fetch("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c")
          .then(res => res.json())
