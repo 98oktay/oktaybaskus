@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+import DocumentTitle from "react-document-title";
 
 export default class extends Component {
 
@@ -8,15 +9,14 @@ export default class extends Component {
         this.state = {
             posts: []
         };
-
-
         axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c')
             .then(response => {
-                console.log(response.data);
                 this.setState({posts: response.data.articles})
+
+                TweenMax.staggerFrom('.news-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
+
+
             });
-
-
     }
 
     componentDidMount() {
@@ -36,9 +36,9 @@ export default class extends Component {
 
         return (
             <div className="row">
-
+                <DocumentTitle title={document.title.replace('Official', 'Tech News')}/>
                 {this.state.posts.map((item, index) =>
-                    <div className="col-sm-4" key={index}>
+                    <div className="news-item col-sm-4" key={index}>
                         <div className="card">
                             <a href={item.url} target="_blank">
                                 <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>

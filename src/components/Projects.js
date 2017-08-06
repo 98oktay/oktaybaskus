@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import projects from "../data/projects.json";
+import DocumentTitle from "react-document-title";
 
 export default class extends Component {
 
@@ -11,13 +12,17 @@ export default class extends Component {
         };
     }
 
+    componentDidMount() {
+        TweenMax.staggerFrom('.project-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
+    }
+
     render() {
 
         return (
             <div className="row">
-
+                <DocumentTitle title={document.title.replace('Official','My Projects')} />
                 {this.state.posts.map((item, index) =>
-                    <div className="col-sm-3" key={index}>
+                    <div className="project-item col-sm-3" key={index}>
                         <div className="card">
                             <div className="card-block">
                                 <a href={item.url} target="_blank">

@@ -29,18 +29,19 @@ Pages
 
 
 const NotFound = () =>
-    <div className="text-white">
+    <div className="c">
         <h3>404 page not found</h3>
         <p>We are sorry but the page you are looking for does not exist.</p>
     </div>;
 
 export const MainNav = () =>
-    <ul className="navbar-nav m-auto">
+    <ul className="navbar-nav mr-auto">
         <NavItem exact to="/">About Me</NavItem>
         <NavItem to="/skills">Skills</NavItem>
         <NavItem to="/experience">Experience</NavItem>
         <NavItem to="/projects">Projects</NavItem>
         <NavItem to="/news">Tech News</NavItem>
+        <li className="nav-item"><a className="nav-link" href="/cv"> CV</a></li>
     </ul>;
 
 export const Pages = () =>
