@@ -25,7 +25,7 @@ export default class extends Component {
                         <div className="about-me-text">
                             <div className="opacity-box">
                                 <p>I am a Web Developer located in İstanbul, Turkey. I currently work
-                                    at .. , located in .. I am looking to take on more work and to increase my skills as
+                                    at Istanbul , located in Turkey I am looking to take on more work and to increase my skills as
                                     a Web Developer.</p>
                             </div>
                         </div>
