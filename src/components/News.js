@@ -11,7 +11,7 @@ export default class extends Component {
             posts: []
         };
 
-        if(sessionStorage.getItem('newsData')) {
+        if (sessionStorage.getItem('newsData')) {
             this.state.posts = JSON.parse(sessionStorage.getItem('newsData'));
         } else {
             axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c')
@@ -25,10 +25,9 @@ export default class extends Component {
     }
 
 
-
     onDataLoad() {
 
-        TweenMax.staggerFrom('.news-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
+        TweenMax.staggerFrom('.animated-down, .news-item', 2, {y: -100, opacity: 0, ease: Expo.easeOut}, 0.3);
 
     }
 
@@ -37,6 +36,7 @@ export default class extends Component {
         if (this.state.posts) {
             this.onDataLoad();
         }
+
         /*
          fetch("https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=afe0871d806c42ceaabf1c9763e8975c")
          .then(res => res.json())
@@ -52,19 +52,22 @@ export default class extends Component {
         return (
             <div className="row">
                 <DocumentTitle title={document.title.replace('Official', 'Tech News')}/>
-                {this.state.posts.map((item, index) =>
-                    <div className="news-item col-sm-4" key={index}>
-                        <div className="card mb-4">
-                            <a href={item.url} target="_blank">
-                                <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>
-                            </a>
-                            <div className="card-block">
-                                <p className="card-text">{item.title}</p>
-                                <a href={item.url} target="_blank" className="btn btn-secondary">Read</a>
+                <h2 className="animated-down">Technology News</h2>
+                <div className="row">
+                    {this.state.posts.map((item, index) =>
+                        <div className="news-item col-sm-4" key={index}>
+                            <div className="card mb-4">
+                                <a href={item.url} target="_blank">
+                                    <img className="card-img-top img-fluid" src={item.urlToImage} alt="Card image cap"/>
+                                </a>
+                                <div className="card-block">
+                                    <p className="card-text">{item.title}</p>
+                                    <a href={item.url} target="_blank" className="btn btn-secondary">Read</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
         );
     }

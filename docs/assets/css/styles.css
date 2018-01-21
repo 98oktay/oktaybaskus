@@ -6,7 +6,13 @@ body {
     background-size: cover;
     */
     padding-top: 9rem;
+    background: #c0dbec;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    min-height: 100%;
+    padding-bottom: 150px;
 }
 
 @media (max-width: 575px) {
@@ -19,8 +25,17 @@ body {
 }
 
 #header {padding: 2.0rem 1rem; }
+#header .nav-item{ text-transform: uppercase; font-weight: 700;}
+
+#header.navbar-toggleable .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .navbar-brand { font-weight: bold; }
-.social-icons a { display: inline-block; color: #333; padding: 0 20px 0 0; }
+.social-icons a { display: inline-block; color: #eeeeee; padding: 0 20px 0 0; text-decoration: none }
+.social-icons a:hover {
+    color: #c0dbec;
+}
 #particlesBackground {
     position: fixed;
     display: block;
@@ -31,4 +46,10 @@ body {
 
 .personalImage {
     max-width: 100%;
+}
+
+#footer {
+    padding: 2.0rem 1rem;
+    height: 100px;
+    margin-top: -100px;
 }

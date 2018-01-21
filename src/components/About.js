@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import DocumentTitle from "react-document-title";
 import TweenMax from "gsap";
+import {NavLink} from "react-router-dom";
 
 export default class extends Component {
 
@@ -14,7 +15,7 @@ export default class extends Component {
                 <DocumentTitle title={document.title.replace('Official','About Me')} />
                 <div className="col-md-6 push-md-6 animated-down">
                     <div className="about-img wow slideInRight duotone-box">
-                        <img src="/assets/images/oktay-baskus-ofice.jpg" className="personalImage" alt=""/>
+                        <img src="/assets/images/profil-fotograf-oktay-baskus.jpg" className="personalImage" alt=""/>
                     </div>
                 </div>
                 <div className="col-md-6 pull-md-6 animated-down">
@@ -41,33 +42,15 @@ export default class extends Component {
                                 <dt className="col-sm-3">Email</dt>
                                 <dd className="col-sm-9">oktay@yandex.com</dd>
 
-                                <dt className="col-sm-3">Social</dt>
-                                <dd className="col-sm-9 social-icons">
-                                    <a target="_blank" href="https://www.facebook.com/" className="fa fonts-icons fa-facebook"></a>
-                                    <a target="_blank" href="https://twitter.com/" className="fa fonts-icons fa-twitter"></a>
-                                    <a target="_blank" href="https://www.instagram.com/" className="fa fonts-icons fa-instagram"></a>
-                                    <a target="_blank" href="https://www.linkedin.com/" className="fa fonts-icons fa-linkedin"></a>
-                                    <a target="_blank" href="https://www.behance.net/" className="fa fonts-icons fa-behance"></a>
-                                    <a target="_blank" href="https://dribbble.com/" className="fa fonts-icons fa-dribbble"></a>
-                                    <a target="_blank" href="https://medium.com/" className="fa fonts-icons fa-medium"></a>
-                                    <a target="_blank" href="https://github.com/" className="fa fonts-icons fa-github"></a>
-                                    
-                                </dd>
 
                             </dl>
                         </div>
                         <div className="about-btns">
-                            <a data-toggle="modal" data-target="#contact-modal" href="/cv" className="btn btn-secondary">My Projects</a>
-                            <a href="/cv" className="btn btn-secondary">View cv</a>
+                            <NavLink to="/projects" className="btn btn-sm btn-secondary">My Projects</NavLink>
+                            &nbsp;&nbsp;<a href="/cv" className="btn btn-sm btn-secondary">View cv</a>
                         </div>
                     </div>
                 </div>
-                {/*<div className="text-white text-center">
-                 <DocumentTitle title={document.title.replace('Official','About Me')} />
-                 <img src="/cv/resources/images/oktay-baskus.png" className="personalImage rounded"/>
-                 <h1>www.oktaybaskus.com.tr</h1>
-                 <div>Software Developer</div>
-                 </div>*/}
             </div>
         );
     }

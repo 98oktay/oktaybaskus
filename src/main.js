@@ -30,11 +30,14 @@ const OktayBaskus = () => (
     </BrowserRouter>
 );
 
-ReactDOM.render(<OktayBaskus />, document.getElementById('main'));
+ReactDOM.render(<OktayBaskus />, document.getElementById('wrapper'));
+
+TweenMax.from('#header', 3, { delay:1, y: -50, opacity: 0, ease: Expo.easeOut});
+TweenMax.from('#footer', 3, { delay:1.5, y: 50, opacity: 0, ease: Expo.easeOut});
 
 Particles.init({
     selector: '#particlesBackground',
-    color: '#dcdcdc',
+    color: '#ffffff',
     maxParticles: 130,
     connectParticles: true,
     responsive: [

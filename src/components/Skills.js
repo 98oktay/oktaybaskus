@@ -23,6 +23,9 @@ export default class extends Component {
                             <p>I am inspired by creating great work with people who are as passionate as I am about
                                 building something awesome.</p>
                         </div>
+                        <div className="opacity-box">
+                            <img className="img-thumbnail" src="/assets/images/code-screen-edited.jpg" />
+                        </div>
                     </div>
                 </div>
                 <div className="col-md-8">
