@@ -28,6 +28,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=1"/>
     <meta name="HandheldFriendly" content="true"/>
     <link rel="shortcut icon" href="/cv/resources/images/favicon.ico" />
+    <script src="https://browser.sentry-cdn.com/5.2.0/bundle.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <canvas id="particlesBackground"></canvas>
@@ -45,5 +47,8 @@
     </div>
 </footer>
 <script src="/bundle.js"></script>
+<script>
+    Sentry.init({ dsn: 'https://1dd857ae50fa4bcfabf7eeb1b37096d4@sentry.io/1459744' });
+</script>
 </body>
 </html>
