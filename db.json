@@ -5,42 +5,48 @@
       "title": "Location 1",
       "longitude":"12.63376",
       "latitude":"66.02219",
-      "category": "sweet"
+      "category": "sweet",
+      "payments": [3,8,9]
     },
     {
       "id": 2,
       "title": "location 2",
       "longitude":"16.50279",
       "latitude":"68.03515",
-      "category": "drink"
+      "category": "drink",
+      "payments": [3,6,8]
     },
     {
       "id": 3,
       "title": "location 3",
       "longitude":"7.53744",
       "latitude":"60.08929",
-      "category": "drink"
+      "category": "drink",
+      "payments": [3,4,8,9]
     },
     {
       "id": 4,
       "title": "location 4",
       "longitude":"11.38411",
       "latitude":"62.57481",
-      "category": "coffee"
+      "category": "coffee",
+      "payments": [6,8,9]
     },
     {
       "id": 5,
       "title": "location 5",
       "longitude":"6.96781",
       "latitude":"60.96335",
-      "category": "favorite"
+      "category": "favorite",
+      "payments": [3,6,9]
     },
     {
       "id": 6,
       "title": "location 6",
       "longitude":"8.49139",
       "latitude":"59.87111",
-      "category": "eat"
+      "category": "eat",
+      "payments": [3,6,8]
     }    
   ],
   "menus": [
