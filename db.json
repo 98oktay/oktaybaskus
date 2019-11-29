@@ -1,137 +1,167 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "Location 1",
-      "longitude":"12.63376",
-      "latitude":"66.02219",
-      "category": "sweet",
-      "star": 4.8,
-      "payments": [3,8,9]
-    },
-    {
-      "id": 2,
-      "title": "New Castle",
-      "longitude":"16.50279",
-      "latitude":"68.03515",
-      "category": "drink",
-      "payments": [3,6,8],
-      "star": 4.9
-    },
-    {
-      "id": 3,
-      "title": "StarBucks",
-      "longitude":"7.53744",
-      "latitude":"60.08929",
-      "subCategory": "Cafeteria",
-      "category": "coffee",
-      "payments": [3,4,8,9],
-      "star": 3.7
-    },
-    {
-      "id": 4,
-      "title": "location 4",
-      "longitude":"11.38411",
-      "latitude":"62.57481",
-      "category": "coffee",
-      "subCategory": "Cafeteria",
-      "payments": [6,8,9],
-      "star": 3.4
-    },
-    {
-      "id": 5,
-      "title": "location 5",
-      "longitude":"6.96781",
-      "latitude":"60.96335",
-      "category": "favorite",
-      "subCategory": "Fast Food",
-      "payments": [3,6,9],
-      "star": 3.2
-    },
-    {
-      "id": 6,
-      "title": "location 6",
-      "longitude":"8.49139",
-      "latitude":"59.87111",
-      "subCategory": "Restaurant",      
-      "category": "eat",
-      "payments": [3,6,8],
-      "star": 2.6
-    }    
-  ],
-  "menus": [
-    {
-      "id" : 1,
-      "postId": 5,
-      "items": [
-        {
-           "title": "category 1"
-        },
-        {
-           "title": "category 2"
-        }
-      ]
-    },
-    {
-      "id" : 2,
-      "postId": 2,
-      "items": [
-        {
-           "title": "2. category 1"
-        },
-        {
-           "title": "2. category 2"
-        }
-      ]
-    }
-  ],
-  "comments": [
-    {
-      "id" : 1,
-      "postId": 5,
-      "userId": 1,
-      "message": "Çok güzel olmuş tebrikler."
-    },
-     {
-      "id" : 1,
-      "postId": 5,
-      "userId": 2,
-      "message": "Güzel mekan olmuş."
-    },
-     {
-      "id" : 1,
-      "postId": 4,
-      "userId": 2,
-      "message": "Mekan on numara!!"
-    }
-  ],
-  "users": [
-    {
-    "id":1,
-    "name": "Fatih",
-    "surname": "Tüzen"
-    },
-    {
-    "id":2,
-    "name": "Hasan",
-    "surname": "Aydın"
-    }
-  ],
-  "user": {
-    "profile": {
-      "name": "Oktay",
-      "surname": "Baskus",
-      "email": "98oktay@gmail.com",
-      "notifications": true
-    },
-    "login": {
-      "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTc0NjE2NjU0LCJleHAiOjE1NzQ2MjY2NTR9.9hfsxEfXm5sxxIxmJxsnsuaz1WjX1gPMMxu7VpReAjk",
-      "data": {
-        "name": "Oktay",
-        "surname": "Baskus",
-        "email": "98oktay@gmail.com",
-        "notifications": true
+   "posts":[
+      {
+         "id":1,
+         "title":"Location 1",
+         "longitude":"12.63376",
+         "latitude":"66.02219",
+         "category":"sweet",
+         "star":4.8,
+         "payments":[
+            3,
+            8,
+            9
+         ]
+      },
+      {
+         "id":2,
+         "title":"New Castle",
+         "longitude":"16.50279",
+         "latitude":"68.03515",
+         "category":"drink",
+         "payments":[
+            3,
+            6,
+            8
+         ],
+         "star":4.9
+      },
+      {
+         "id":3,
+         "title":"StarBucks",
+         "longitude":"7.53744",
+         "latitude":"60.08929",
+         "subCategory":"Cafeteria",
+         "category":"coffee",
+         "payments":[
+            3,
+            4,
+            8,
+            9
+         ],
+         "star":3.7
+      },
+      {
+         "id":4,
+         "title":"location 4",
+         "longitude":"11.38411",
+         "latitude":"62.57481",
+         "category":"coffee",
+         "subCategory":"Cafeteria",
+         "payments":[
+            6,
+            8,
+            9
+         ],
+         "star":3.4
+      },
+      {
+         "id":5,
+         "title":"location 5",
+         "longitude":"6.96781",
+         "latitude":"60.96335",
+         "category":"favorite",
+         "subCategory":"Fast Food",
+         "payments":[
+            3,
+            6,
+            9
+         ],
+         "star":3.2
+      },
+      {
+         "id":6,
+         "title":"location 6",
+         "longitude":"8.49139",
+         "latitude":"59.87111",
+         "subCategory":"Restaurant",
+         "category":"eat",
+         "payments":[
+            3,
+            6,
+            8
+         ],
+         "star":2.6
       }
-    }
-  }
+   ],
+   "menus":[
+      {
+         "id":1,
+         "postId":5,
+         "items":[
+            {
+               "title":"category 1"
+            },
+            {
+               "title":"category 2"
+            }
+         ]
+      },
+      {
+         "id":2,
+         "postId":2,
+         "items":[
+            {
+               "title":"2. category 1"
+            },
+            {
+               "title":"2. category 2"
+            }
+         ]
+      }
+   ],
+   "comments":[
+      {
+         "id":1,
+         "postId":5,
+         "userId":1,
+         "message":"Çok güzel olmuş tebrikler."
+      },
+      {
+         "id":1,
+         "postId":5,
+         "userId":2,
+         "message":"Güzel mekan olmuş."
+      },
+      {
+         "id":1,
+         "postId":4,
+         "userId":2,
+         "message":"Mekan on numara!!"
+      }
+   ],
+   "users":[
+      {
+         "id":1,
+         "name":"Fatih",
+         "surname":"Tüzen"
+      },
+      {
+         "id":2,
+         "name":"Hasan",
+         "surname":"Aydın"
+      },
+      {
+         "id":3,
+         "name":"Oktay",
+         "surname":"Başkuş"
+      }
+   ],
+   "user":{
+      "profile":{
+         "name":"Oktay",
+         "surname":"Baskus",
+         "email":"98oktay@gmail.com",
+         "notifications":true
+      },
+      "login":{
+         "token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTc0NjE2NjU0LCJleHAiOjE1NzQ2MjY2NTR9.9hfsxEfXm5sxxIxmJxsnsuaz1WjX1gPMMxu7VpReAjk",
+         "data":{
+            "name":"Oktay",
+            "surname":"Baskus",
+            "email":"98oktay@gmail.com",
+            "notifications":true
+         }
+      }
+   }
 }
