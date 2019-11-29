@@ -2,22 +2,51 @@
   "posts": [
     {
       "id": 1,
-      "title": "hello"
+      "title": "Location 1",
+      "longitude":"12.63376",
+      "latitude":"66.02219",
+      "category": "sweet"
     },
     {
       "id": 2,
-      "title": "hello 2"
+      "title": "location 2",
+      "longitude":"16.50279",
+      "latitude":"68.03515",
+      "category": "drink"
     },
     {
       "id": 3,
-      "title": "hello 3"
+      "title": "location 3",
+      "longitude":"7.53744",
+      "latitude":"60.08929",
+      "category": "drink"
     },
     {
       "id": 4,
-      "title": "hello 4"
-    }
+      "title": "location 4",
+      "longitude":"11.38411",
+      "latitude":"62.57481",
+      "category": "coffee"
+    },
+    {
+      "id": 5,
+      "title": "location 5",
+      "longitude":"6.96781",
+      "latitude":"60.96335",
+      "category": "favorite"
+    },
+    {
+      "id": 6,
+      "title": "location 6",
+      "longitude":"8.49139",
+      "latitude":"59.87111",
+      "category": "eat"
+    }    
   ],
   "profile": {
-    "name": "typicode"
+    "name": "Oktay",
+    "surname": "Baskus",
+    "email": "98oktay@gmail.com",
+    "notifications": true
   }
 }
