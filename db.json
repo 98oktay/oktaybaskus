@@ -85,6 +85,38 @@
       ]
     }
   ],
+  "comments": [
+    {
+      "id" : 1,
+      "postId": 5,
+      "userId": 1,
+      "message": "Çok güzel olmuş tebrikler."
+    },
+     {
+      "id" : 1,
+      "postId": 5,
+      "userId": 2,
+      "message": "Güzel mekan olmuş."
+    },
+     {
+      "id" : 1,
+      "postId": 4,
+      "userId": 2,
+      "message": "Mekan on numara!!"
+    },
+  ],
+  "users": [
+    {
+    "id":1,
+    "name": "Fatih",
+    "surname": "Tüzen"
+    },
+    {
+    "id":2,
+    "name": "Hasan",
+    "surname": "Aydın"
+    }
+  ]
   "profile": {
     "name": "Oktay",
     "surname": "Baskus",
