@@ -23,7 +23,7 @@
       "title": "StarBucks",
       "longitude":"7.53744",
       "latitude":"60.08929",
-      "subCategory": "Cafeteria"
+      "subCategory": "Cafeteria",
       "category": "coffee",
       "payments": [3,4,8,9],
       "star": 3.7
@@ -44,7 +44,7 @@
       "longitude":"6.96781",
       "latitude":"60.96335",
       "category": "favorite",
-      "subCategory": "Fast Food"
+      "subCategory": "Fast Food",
       "payments": [3,6,9],
       "star": 3.2
     },
