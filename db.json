@@ -6,23 +6,27 @@
       "longitude":"12.63376",
       "latitude":"66.02219",
       "category": "sweet",
+      "star": 4.8,
       "payments": [3,8,9]
     },
     {
       "id": 2,
-      "title": "location 2",
+      "title": "New Castle",
       "longitude":"16.50279",
       "latitude":"68.03515",
       "category": "drink",
-      "payments": [3,6,8]
+      "payments": [3,6,8],
+      "star": 4.9
     },
     {
       "id": 3,
-      "title": "location 3",
+      "title": "StarBucks",
       "longitude":"7.53744",
       "latitude":"60.08929",
-      "category": "drink",
-      "payments": [3,4,8,9]
+      "subCategory": "Cafeteria"
+      "category": "coffee",
+      "payments": [3,4,8,9],
+      "star": 3.7
     },
     {
       "id": 4,
@@ -30,7 +34,9 @@
       "longitude":"11.38411",
       "latitude":"62.57481",
       "category": "coffee",
-      "payments": [6,8,9]
+      "subCategory": "Cafeteria",
+      "payments": [6,8,9],
+      "star": 3.4
     },
     {
       "id": 5,
@@ -38,15 +44,19 @@
       "longitude":"6.96781",
       "latitude":"60.96335",
       "category": "favorite",
-      "payments": [3,6,9]
+      "subCategory": "Fast Food"
+      "payments": [3,6,9],
+      "star": 3.2
     },
     {
       "id": 6,
       "title": "location 6",
       "longitude":"8.49139",
       "latitude":"59.87111",
+      "subCategory": "Restaurant",      
       "category": "eat",
-      "payments": [3,6,8]
+      "payments": [3,6,8],
+      "star": 2.6
     }    
   ],
   "menus": [
