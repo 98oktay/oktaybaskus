@@ -147,21 +147,13 @@
          "surname":"Başkuş"
       }
    ],
-   "user":{
-      "profile":{
+   "login":{
+      "token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTc0NjE2NjU0LCJleHAiOjE1NzQ2MjY2NTR9.9hfsxEfXm5sxxIxmJxsnsuaz1WjX1gPMMxu7VpReAjk",
+      "data":{
          "name":"Oktay",
          "surname":"Baskus",
          "email":"98oktay@gmail.com",
          "notifications":true
-      },
-      "login":{
-         "token":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNTc0NjE2NjU0LCJleHAiOjE1NzQ2MjY2NTR9.9hfsxEfXm5sxxIxmJxsnsuaz1WjX1gPMMxu7VpReAjk",
-         "data":{
-            "name":"Oktay",
-            "surname":"Baskus",
-            "email":"98oktay@gmail.com",
-            "notifications":true
-         }
       }
    }
 }
