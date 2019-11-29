@@ -43,6 +43,32 @@
       "category": "eat"
     }    
   ],
+  "menus": [
+    {
+      "id" : 1,
+      "postId": 5,
+      "items": [
+        {
+           "title": "category 1"
+        },
+        {
+           "title": "category 2"
+        }
+      ]
+    },
+    {
+      "id" : 2,
+      "postId": 2,
+      "items": [
+        {
+           "title": "2. category 1"
+        },
+        {
+           "title": "2. category 2"
+        }
+      ]
+    }
+  ],
   "profile": {
     "name": "Oktay",
     "surname": "Baskus",
