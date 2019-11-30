@@ -114,6 +114,7 @@
       {
          "id":1,
          "restaurantId":5,
+         "updatedAt": "2019-11-16 19:35:02",
          "userId":1,
          "message":"Çok güzel olmuş tebrikler."
       },
@@ -121,12 +122,14 @@
          "id":1,
          "restaurantId":5,
          "userId":2,
+         "updatedAt": "2019-11-27 19:34:58",
          "message":"Güzel mekan olmuş."
       },
       {
          "id":1,
          "restaurantwId":4,
          "userId":2,
+         "updatedAt": "2019-11-17 07:55:17",
          "message":"Mekan on numara!!"
       }
    ],
