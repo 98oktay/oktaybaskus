@@ -87,7 +87,7 @@
    "menus":[
       {
          "id":1,
-         "postId":5,
+         "restaurantId":5,
          "items":[
             {
                "title":"category 1"
@@ -99,7 +99,7 @@
       },
       {
          "id":2,
-         "postId":2,
+         "restaurantId":2,
          "items":[
             {
                "title":"2. category 1"
