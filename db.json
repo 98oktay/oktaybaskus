@@ -1,10 +1,10 @@
 {
-   "posts":[
+   "restaurants":[
       {
          "id":1,
-         "title":"Location 1",
-         "longitude":"12.63376",
-         "latitude":"66.02219",
+         "title":"Mamikler Künefe",
+         "longitude":41.0233222,
+         "latitude":29.0411155,
          "category":"sweet",
          "star":4.8,
          "payments":[
@@ -15,9 +15,9 @@
       },
       {
          "id":2,
-         "title":"New Castle",
-         "longitude":"16.50279",
-         "latitude":"68.03515",
+         "title":"Newcastle Watergarden",
+         "longitude":40.9990662,
+         "latitude":29.0993051,
          "category":"drink",
          "payments":[
             3,
@@ -28,9 +28,9 @@
       },
       {
          "id":3,
-         "title":"StarBucks",
-         "longitude":"7.53744",
-         "latitude":"60.08929",
+         "title":"Starbucks",
+         "longitude":41.0095183,
+         "latitude":29.0393355,
          "subCategory":"Cafeteria",
          "category":"coffee",
          "payments":[
@@ -43,10 +43,10 @@
       },
       {
          "id":4,
-         "title":"location 4",
-         "longitude":"11.38411",
-         "latitude":"62.57481",
-         "category":"coffee",
+         "title":"YES Casfe Premium",
+         "longitude":41.0006889,
+         "latitude":29.0362314,
+         "category":"breakfast",
          "subCategory":"Cafeteria",
          "payments":[
             6,
@@ -57,9 +57,9 @@
       },
       {
          "id":5,
-         "title":"location 5",
-         "longitude":"6.96781",
-         "latitude":"60.96335",
+         "title":"Merdiven Restoran",
+         "longitude":41.010537,
+         "latitude":29.0443794,
          "category":"favorite",
          "subCategory":"Fast Food",
          "payments":[
@@ -71,9 +71,9 @@
       },
       {
          "id":6,
-         "title":"location 6",
-         "longitude":"8.49139",
-         "latitude":"59.87111",
+         "title":"MADO Salacak",
+         "longitude":41.02068,
+         "latitude":29.0078393,
          "subCategory":"Restaurant",
          "category":"eat",
          "payments":[
@@ -113,19 +113,19 @@
    "comments":[
       {
          "id":1,
-         "postId":5,
+         "restaurantId":5,
          "userId":1,
          "message":"Çok güzel olmuş tebrikler."
       },
       {
          "id":1,
-         "postId":5,
+         "restaurantId":5,
          "userId":2,
          "message":"Güzel mekan olmuş."
       },
       {
          "id":1,
-         "postId":4,
+         "restaurantwId":4,
          "userId":2,
          "message":"Mekan on numara!!"
       }
