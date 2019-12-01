@@ -5,7 +5,7 @@
          "title":"Mamikler Künefe",
          "longitude":29.0411155,
          "latitude":41.0233222,
-         "category":"sweet",
+         "category":4,
          "star":4.8,
          "payments":[
             3,
@@ -18,7 +18,7 @@
          "title":"Newcastle Watergarden",
          "longitude":29.0993051,
          "latitude":40.9990662,
-         "category":"drink",
+         "category": 5,
          "payments":[
             3,
             6,
@@ -32,7 +32,7 @@
          "longitude":29.0393355,
          "latitude":41.0095183,
          "subCategory":"Cafeteria",
-         "category":"coffee",
+         "category":3,
          "payments":[
             3,
             4,
@@ -46,7 +46,7 @@
          "title":"YES Casfe Premium",
          "longitude":29.0362314,
          "latitude":41.0006889,
-         "category":"breakfast",
+         "category":"2,
          "subCategory":"Cafeteria",
          "payments":[
             6,
@@ -60,7 +60,7 @@
          "title":"Merdiven Restoran",
          "longitude":29.0443794,
          "latitude":41.010537,
-         "category":"favorite",
+         "category":1,
          "subCategory":"Fast Food",
          "payments":[
             3,
@@ -74,7 +74,7 @@
          "title":"MADO Salacak",
          "longitude":29.0078393,
          "latitude":41.02068,
-         "subCategory":"Restaurant",
+         "subCategory":2,
          "category":"eat",
          "payments":[
             3,
