@@ -5,6 +5,7 @@
          "title":"Mamikler Künefe",
          "longitude":29.0411155,
          "latitude":41.0233222,
+         "subCategory":"Fast Food",
          "category":4,
          "star":4.8,
          "payments":[
@@ -19,6 +20,7 @@
          "longitude":29.0993051,
          "latitude":40.9990662,
          "category": 5,
+         "subCategory":"Fast Food",
          "payments":[
             3,
             6,
