@@ -36,13 +36,6 @@ export default class extends Component {
                                 <dt className="col-sm-3">Date of Birth</dt>
                                 <dd className="col-sm-9">10 Oct. 1989</dd>
 
-                                <dt className="col-sm-3">Phone</dt>
-                                <dd className="col-sm-9">+90 544 209 65 00</dd>
-
-                                <dt className="col-sm-3">Email</dt>
-                                <dd className="col-sm-9">oktay@yandex.com</dd>
-
-
                             </dl>
                         </div>
                         <div className="about-btns">
